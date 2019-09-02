@@ -73,6 +73,7 @@ body {
     max-width: 1900px;
     min-height: 750px;
     padding-top: 100px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,19 +133,137 @@ body {
 }
 
 /* ==================== Features ==================== */
-
 .section-features {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 90px 0;
 }
 
 .features__item {
-    max-width: 390px;
+    width: 33.33333%;
+    text-align: center;     /* центрирование текста в блоке */
+    padding: 0 44px;
+    margin: 35px 0;
+}
+
+.features__item-pic {
+    margin-bottom: 33px;
+}
+
+.features__item-name {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.features__item-desc {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+
+/* Works */
+
+.section-works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.works__item {
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+}
+
+.works__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e84545;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s linear;
 }
 
-.features__item-pic {
-    width: 60px;
+.works__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.works__text {
+    font-size: 14px;
+    color: #fff;
+}
+
+.works__content:hover {
+    opacity: 0.8;
+}
+
+/* Section "Team" */
+
+.section-team {
+    width: 100%;
+    display: flex;
+    margin: 100px auto;
+}
+
+.team__member {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.team__member:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.member__photo {
+    margin-bottom: 25px;
+}
+
+.member__name {
+    font-size: 22px;
+    color: #2d3033;
+    margin-bottom: 10px;
+}
+
+.member__position {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.member__desc {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
