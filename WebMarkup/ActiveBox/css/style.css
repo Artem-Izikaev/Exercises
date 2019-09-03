@@ -21,8 +21,9 @@ body {
 /* ==================== Container ==================== */
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* ==================== Header ==================== */
@@ -77,7 +78,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #31354f url("../img/intro-bq.png") center no-repeat /cover;
+    background: #31354f url("../img/intro-bq.png") center no-repeat;
+    background-size: cover;
 }
 
 .intro-inner {
@@ -167,7 +169,7 @@ body {
     color: #6c7279;
 }
 
-/* Works */
+/* ==================== Section "Works" ==================== */
 
 .section-works {
     display: flex;
@@ -225,26 +227,26 @@ body {
     opacity: 0.8;
 }
 
-/* Section "Team" */
+/* ==================== Section "Team" ==================== */
 
 .section-team {
-    width: 100%;
     display: flex;
-    margin: 100px auto;
+    flex-wrap: wrap;
+    margin: 100px -15px 70px;
 }
 
 .team__member {
     width: 25%;
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
-}
-
-.team__member:nth-last-child(1) {
-    margin-right: 0;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .member__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 25px;
 }
 
@@ -266,4 +268,187 @@ body {
     color: #6c7279;
     line-height: 1.5;
     margin-bottom: 25px;
+}
+
+/* ==================== Social ==================== */
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8ecee;
+    margin-right: 4px;
+    background-color: #fff;
+    transition: background-color .1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+    fill: #e84545;
+}
+
+.social__icon {
+    height: 18px;
+    fill: #c6cacc;
+    transition: fill .1s linear;
+}
+
+.social__icon:hover {
+    fill: red;
+}
+
+/* ==================== Reviews ==================== */
+.reviews {
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #53354a;
+    overflow: hidden;
+}
+.reviews__item {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo {
+    position: relative;
+    width: 50%;
+    display: flex;    
+    justify-content: flex-end;
+}
+
+.reviews__content {
+    width: 50%;
+    margin-top: 111px;
+    padding-left: 84px;
+}
+
+.reviews__text {
+    font-family: Cardo, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.16666;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.reviews_author {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* ==================== Download ==================== */
+
+.download {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.download__title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: .75;
+    color: #2d3033;
+    margin-bottom: 16px;
+}
+
+.downloand__subtitle {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #2d3033;
+    margin-bottom: 40px;
+}
+
+.download__button {
+    padding: 18px 83px;
+}
+
+/* ==================== Footer ==================== */
+
+.footer {
+    max-width: 1900px;
+    background-color: #3a3e64;
+    margin: 0 auto;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 70px 0 85px;
+}
+
+.footer__contacts__item {
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.footer__contacts__item-header {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer__contacts__item-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #fff;
+    opacity: .5;
+}
+
+.footer__social__item {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.footer__social__icon {
+    fill: #fff;
+}
+
+/* ==================== Copyright ==================== */
+.footer__copyright {
+    margin: 0 auto;
+    padding: 25px 0;
+    background-color: #313454;
+
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #808080;
+}
+
+.copyright__creator {
+    color: #fff;
+}
+
+.hearts {
+    font-size: 18px;
+    color: #ff0000;
 }
