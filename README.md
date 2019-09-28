@@ -1,2 +1,2 @@
 # exercises
-My solutions of various exercises (courses, algorytms, quizes etc.)
+My solutions of various exercises on Java (courses, algorytms, quizes etc.)

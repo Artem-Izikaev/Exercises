@@ -1,2 +1,0 @@
-Responsive Web Design Certification
-
